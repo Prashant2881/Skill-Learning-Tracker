@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skill Learning Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Skill Learning Tracker</h1>
+  </header>
+
+  <main>
+    <div class="box1">
+
+        <section id="add-skill-section">
+            <h2>Add a New Skill</h2>
+            <form id="skill-form">
+              <input type="text" id="skill-name" placeholder="Skill Name" required>
+              <input type="text" id="goal" placeholder="Your Goal (e.g., Master basics in 30 days)" required>
+              <button type="submit">Add Skill</button>
+            </form>
+          </section>
+      
+          <section id="skills-list-section">
+            <h2>Your Skills</h2>
+            <ul id="skills-list"></ul>
+          </section>
+      
+          <section id="edit-skill-section" style="display: none;">
+            <h2>Edit Skill</h2>
+            <form id="edit-skill-form">
+              <input type="text" id="edit-skill-name" placeholder="Skill Name" required>
+              <input type="text" id="edit-goal" placeholder="Goal" required>
+              <button type="submit">Update Skill</button>
+            </form>
+          </section>
+
+          <section id="progress-section">
+            <h2>Log Progress</h2>
+            <form id="progress-form">
+              <select id="skill-select" required>
+                <option value="" disabled selected>Select a Skill</option>
+              </select>
+              <input type="text" id="progress-description" placeholder="What did you do today?" required>
+              <input type="number" id="time-spent" placeholder="Time Spent (in minutes)" required>
+              <button type="submit">Log Progress</button>
+            </form>
+          </section>
+
+    </div>
+
+    <div class="box2">
+        <section id="analytics-section">
+            <h2>Analytics</h2>
+            <canvas id="analytics-chart" width="400" height="200"></canvas>
+          </section>
+
+    </div>
+   
+
+
+
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+           
+                     
+         
+                                          
